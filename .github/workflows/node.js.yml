@@ -28,6 +28,6 @@ jobs:
       - run: npm test
       - run: npm ci
       - name: Start Application with PM2
-        run: pm2 restart app.js
+        run: pm2 restart app.js -f
       - name: Save PM2 process list
         run: pm2 save
